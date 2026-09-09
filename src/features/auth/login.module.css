@@ -1,0 +1,74 @@
+.card {
+  position: relative;
+  background: #fafbf5;
+  padding: clamp(24px, 4vw, 48px);
+  border-radius: 30px;
+  box-shadow: 0 25px 70px #19342612;
+}
+.logo {
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.card h1 {
+  font:
+    500 46px/1.05 Georgia,
+    serif;
+  letter-spacing: -0.04em;
+  margin: 15px 0;
+}
+.card p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #687b6d;
+}
+.badge {
+  display: inline-block;
+  background: #e8efcf;
+  color: #465d28;
+  padding: 7px 11px;
+  border-radius: 30px;
+  font-size: 11px;
+  margin-top: 18px;
+}
+.card .note {
+  font-size: 11px;
+}
+.profile {
+  width: 100%;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border: 1px solid #dbe4d5;
+  border-radius: 16px;
+  background: white;
+  color: #193426;
+  cursor: pointer;
+  margin: 10px 0;
+  text-align: left;
+}
+.profile > span {
+  background: #e6eed5;
+  padding: 12px;
+  border-radius: 50%;
+}
+.profile > div {
+  flex: 1;
+  display: grid;
+  gap: 5px;
+}
+.profile small {
+  color: #788575;
+}
+.signIn {
+  display: block;
+  background: #285d3e;
+  color: white;
+  padding: 16px;
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 25px;
+}

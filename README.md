@@ -4,9 +4,9 @@ An open-source, mobile-first plant-care interface prototype built with Next.js, 
 
 ## Current status
 
-**This is an interactive UI prototype. It does not identify plants or diagnose disease.** Every photo returns the same sample peace-lily result. All scores, percentages, symptoms, and recommendations are illustrative, not computed from the image. Context answers change displayed text, not the underlying assessment.
+**This is an interactive prototype. It does not identify plants or diagnose disease.** Plans are explicitly labelled as peace-lily examples. Soil and light answers adjust sample care actions. Photos are previews only; no diagnostic scores or probabilities are generated.
 
-Photo selection, context questions, and the in-memory care checklist work. Saving plants, reminders, the information menu, real AI analysis, and AR tracking are not implemented. Selected photos stay in the browser; no inference provider is connected.
+Demo login, photo selection, context questions, saved plants, and persistent care checklists work. Each demo profile has a separate collection. PostgreSQL storage and WorkOS AuthKit integration are implemented with environment configuration; real WorkOS sign-in requires your credentials. Photos are not stored. Notifications, real AI analysis, and AR tracking remain future work. No inference provider is connected.
 
 ## Run locally
 
@@ -19,7 +19,7 @@ npm ci
 npm run dev
 ```
 
-Open [localhost:3000](http://localhost:3000). Choose a photo or select **Try with sample**, answer the context questions, and explore the sample care checklist.
+Open [localhost:3000](http://localhost:3000), choose a demo profile, then select **Try with sample**. Demo login is development-only. See [Login and PostgreSQL setup](docs/AUTH-AND-DATABASE.md) to enable the database and real WorkOS accounts.
 
 ```sh
 npm run lint
@@ -31,7 +31,9 @@ npm start
 
 Read [the product analysis](docs/PRODUCT-ANALYSIS.md) for competitor research, dataset limitations, candidate APIs, and a proposed validation plan. These are research recommendations, not implemented integrations or verified product accuracy claims.
 
-Planned work includes real species identification, evaluated health assessment, curated care guidance, saved plants, and follow-up photos. The repository contains no third-party model weights or datasets.
+Planned work includes real species identification, evaluated health assessment, curated care guidance, and follow-up photos. The repository contains no third-party model weights or datasets.
+
+Read [Architecture](docs/ARCHITECTURE.md) for the dependency boundaries, reusable components, provider interfaces, and browser storage adapter.
 
 ## Contributing
 

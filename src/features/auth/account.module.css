@@ -1,0 +1,38 @@
+.menu {
+  position: relative;
+}
+.menu summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+.panel {
+  position: absolute;
+  width: 240px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #d5dfce;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 15px 35px #10221824;
+}
+.panel small {
+  display: block;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.panel p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #64735d;
+}
+.panel button {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
